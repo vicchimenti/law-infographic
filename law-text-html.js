@@ -115,10 +115,21 @@
       *  Initialize defaults
       * 
       * */
-
+     let openTitle = '<div class="infographicTitle standardContent">';
+     let closeTitle = '</div>'
      let beginningHTML = '<article class="infographicWrapper contentItem border-0 g-0" id="minor' + infoDict.contentId.content + '" aria-label="' + infoDict.headline.content + '">';
      let endingHTML = '</article>';
- 
+
+
+
+
+    /***
+     *  Parse for title
+     * 
+     * */
+     let infographicHeader =    (infoDict.infographicTitle.content) 
+                                ? '<h2>' + infoDict.infographicTitle.content + '</h2>'
+                                : '<h2 class="sr-only">Infographic</h2>';
  
  
  
