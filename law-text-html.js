@@ -285,15 +285,11 @@
              openTitle,
              infographicHeader,
              closeTitle,
-        
-
-
-
+             openGroup,
+             closeGroup,
              openFooter,
              footerString,
              closeFooter,
-
-
              endingHTML
          ]
      );
