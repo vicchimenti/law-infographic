@@ -122,7 +122,7 @@
      let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
      let closeTitle = '</div>';
      let footerString = '<span class="visually-hidden"></span>';
-     let openFooter = '<div class="card-footer border-0 visually-hidden">';
+     let openFooter = '<div class="infographicSummary standardContent card-footer border-0 visually-hidden">';
      let closeFooter = '</div>';
      let endingHTML = '</article>';
 
@@ -148,7 +148,7 @@
      * */
     if (infoDict.summaryText.content) {
 
-        openFooter = '<div class="card-footer border-0">';
+        openFooter = '<div class="infographicSummary standardContent card-footer border-0">';
         footerString = infoDict.summaryText.content;
     }
 
