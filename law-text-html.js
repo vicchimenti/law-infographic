@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.5
+ *      @version 3.6
  */
 
 
@@ -138,7 +138,7 @@
      * */
     if (infoDict.infographicTitle.content) {
 
-        beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
+        beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
         openTitle = '<div class="infographicTitle standardContent">';
         infographicHeader = '<h2 class="m-1 p-1 text-center">' + infoDict.infographicTitle.content + '</h2>';
     }
@@ -166,7 +166,7 @@
     if (infoDict.statNumOne.content) {
 
         // set card defaults
-        let openCardWrapperOne = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
+        let openCardWrapperOne = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorOne.content + '">';
         let openCardBodyOne = '<div class="card-body">';
         let cardNumOne = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumOne.content + '</span></div>';
         let cardHeadingOne = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingOne.content + '</p></div>';
