@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.10
+ *      @version 3.11
  */
 
 
@@ -123,7 +123,7 @@
     let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
     let closeTitle = '</div>';
     let cardDeck = '<span class="card visually-hidden"></span>';
-    let openGroup = '<div class="infographic card-group">';
+    let openGroup = '<div class="infographic card-group flex-column flex-lg-row">';
     let closeGroup = '</div>';
     let summaryString = '<span class="visually-hidden"></span>';
     let openSummary = '<div class="infographicSummary standardContent visually-hidden">';
