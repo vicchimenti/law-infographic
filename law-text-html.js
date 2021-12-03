@@ -117,11 +117,13 @@
       *  Initialize defaults
       * 
       * */
-     let beginningHTML = '<article class="infographicWrapper contentItem col card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
+     let beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
      let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
      let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
      let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
      let closeTitle = '</div>';
+     let openGroup = '<div class="infographic card-group">';
+     let closeGroup = '</div>';
      let footerString = '<span class="visually-hidden"></span>';
      let openFooter = '<div class="infographicSummary standardContent card-footer border-0 visually-hidden">';
      let closeFooter = '</div>';
@@ -135,7 +137,7 @@
      * */
     if (infoDict.infographicTitle.content) {
 
-        beginningHTML = '<article class="infographicWrapper contentItem col card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
+        beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
         openTitle = '<div class="infographicTitle standardContent">';
         infographicHeader = '<h2>' + infoDict.infographicTitle.content + '</h2>';
     }
