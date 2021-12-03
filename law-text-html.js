@@ -118,7 +118,9 @@
       * 
       * */
      let openTitle = '<div class="infographicTitle standardContent">';
-     let closeTitle = '</div>'
+     let closeTitle = '</div>';
+     let openFooter = '<div class="card-footer">';
+     let closeFooter = '</div>';
      let endingHTML = '</article>';
 
 
