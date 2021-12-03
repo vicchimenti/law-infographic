@@ -107,6 +107,8 @@
          contentId: getContentValues('<t4 type="meta" meta="content_id" />')
  
      }
+
+
  
  
  
@@ -117,9 +119,7 @@
       * */
      let openTitle = '<div class="infographicTitle standardContent">';
      let closeTitle = '</div>'
-     let beginningHTML = '<article class="infographicWrapper contentItem border-0 g-0" id="minor' + infoDict.contentId.content + '" aria-label="' + infoDict.headline.content + '">';
      let endingHTML = '</article>';
-
 
 
 
@@ -127,9 +127,19 @@
      *  Parse for title
      * 
      * */
-     let infographicHeader =    (infoDict.infographicTitle.content) 
+    let infographicHeader =     (infoDict.infographicTitle.content) 
                                 ? '<h2>' + infoDict.infographicTitle.content + '</h2>'
                                 : '<h2 class="sr-only">Infographic</h2>';
+
+    let beginningHTML = (infoDict.infographicTitle.content) 
+                        ? '<article class="infographicWrapper contentItem card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '">'
+                        : '<article class="infographicWrapper contentItem card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic">';
+
+
+
+
+
+
  
  
  
