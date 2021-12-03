@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.9
+ *      @version 3.10
  */
 
 
@@ -220,6 +220,38 @@
         let cardTwo = openCardWrapperTwo + openCardBodyTwo + cardIconTwo + cardNumTwo + cardHeadingTwo + cardTextTwo + closeCardBodyTwo + closeCardWrapperTwo;
 
         cardDeck += cardTwo;
+    }
+
+
+
+
+    /***
+     *  Parse for Card two
+     * 
+     * */
+    if (infoDict.statNumThree.content && infoDict.statColorThree.content && infoDict.statHeadingThree.content) {
+
+        // set card defaults
+        let openCardWrapperThree = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorThree.content + '">';
+        let openCardBodyThree = '<div class="card-body p-0 m-3">';
+        let cardNumThree = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumThree.content + '</span></div>';
+        let cardHeadingThree = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingThree.content + '</p></div>';
+        let closeCardBodyThree = '</div>';
+        let closeCardWrapperThree = '</div>';
+
+        // parse for icon
+        let cardIconThree = (infoDict.statIconThree.content)
+                            ? '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconThree.content + '"></span></div>'
+                            : '<div class="infographicItemIcon visually-hidden"><span class="visually-hidden">No Icon</span></div>';
+
+        // parse for text
+        let cardTextThree = (infoDict.statTextThree.content)
+                            ? '<div class="infographicItemText standardContent card-text">' + infoDict.statTextThree.content + '</div>'
+                            : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
+
+        let cardThree = openCardWrapperThree + openCardBodyThree + cardIconThree + cardNumThree + cardHeadingThree + cardTextThree + closeCardBodyThree + closeCardWrapperThree;
+
+        cardDeck += cardThree;
     }
 
 
