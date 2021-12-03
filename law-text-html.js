@@ -80,8 +80,10 @@
      let infoDict = {
  
          itemName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
-         
-         articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />'),
+         infographicTitle: getContentValues('<t4 type="content" name="Infographic Title" output="normal" modifiers="striptags,htmlentities" />'),
+
+
+
          headline: getContentValues('<t4 type="content" name="Headline" output="normal" modifiers="striptags,htmlentities" />'),
          fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
          publishedDate: getContentValues('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />'),
@@ -204,8 +206,8 @@
       * 
       * */
      let titleLink = (infoDict.articleFullBody.content) ?
-         '<h3 class="newsroomArticleTitle card-title"><a href="' + infoDict.fullTextLink.content + '" class="card-link" target="_blank" aria-label="Read the full article at: ' + infoDict.headline.content + '" >' + infoDict.headline.content + '</a></h3>' :
-         '<h3 class="newsroomArticleTitle card-title">' + infoDict.headline.content + '</h3>';
+         '<h3 class="newsroominfographicTitle card-title"><a href="' + infoDict.fullTextLink.content + '" class="card-link" target="_blank" aria-label="Read the full article at: ' + infoDict.headline.content + '" >' + infoDict.headline.content + '</a></h3>' :
+         '<h3 class="newsroominfographicTitle card-title">' + infoDict.headline.content + '</h3>';
  
  
  
