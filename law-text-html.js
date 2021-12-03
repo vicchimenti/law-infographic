@@ -105,6 +105,9 @@
          sectionLink: getContentValues('<t4 type="content" name="Internal SU Link" output="linkurl" modifiers="nav_sections" />'),
          sectionLinkText: getContentValues('<t4 type="content" name="Internal SU Link" output="externalLinkText" modifiers="nav_sections" />'),
 
+
+         summaryText: getContentValues('<t4 type="content" name="Summary Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+         zoneOption: getContentValues('<t4 type="content" name="Zone Option" output="normal" display_field="value" />'),
          anchortag: getContentValues('<t4 type="meta" meta="html_anchor" />'),
          contentId: getContentValues('<t4 type="meta" meta="content_id" />')
  
