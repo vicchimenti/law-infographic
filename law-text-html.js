@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.2
+ *      @version 3.3
  */
 
 
@@ -74,61 +74,61 @@
  try {
  
  
-     /***
-      *      Dictionary of content
-      * */
-     let infoDict = {
- 
-         itemName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
-         infographicTitle: getContentValues('<t4 type="content" name="Infographic Title" output="normal" modifiers="striptags,htmlentities" />'),
-         statNumOne: getContentValues('<t4 type="content" name="Statistic 1 Number" output="normal" modifiers="striptags,htmlentities" />'), 
-         statIconOne: getContentValues('<t4 type="content" name="Statistic 1 Icon" output="normal" display_field="value" />'),
-         statHeadingOne: getContentValues('<t4 type="content" name="Statistic 1 Heading" output="normal" modifiers="striptags,htmlentities" />'),
-         statTextOne: getContentValues('<t4 type="content" name="Statistic 1 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
-         statColorOne: getContentValues('<t4 type="content" name="Statistic 1 Color Combination" output="normal" display_field="value" />'),
-         statNumTwo: getContentValues('<t4 type="content" name="Statistic 2 Number" output="normal" modifiers="striptags,htmlentities" />'), 
-         statIconTwo: getContentValues('<t4 type="content" name="Statistic 2 Icon" output="normal" display_field="value" />'),
-         statHeadingTwo: getContentValues('<t4 type="content" name="Statistic 2 Heading" output="normal" modifiers="striptags,htmlentities" />'),
-         statTextTwo: getContentValues('<t4 type="content" name="Statistic 2 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
-         statColorTwo: getContentValues('<t4 type="content" name="Statistic 2 Color Combination" output="normal" display_field="value" />'),
-         statNumThree: getContentValues('<t4 type="content" name="Statistic 3 Number" output="normal" modifiers="striptags,htmlentities" />'), 
-         statIconThree: getContentValues('<t4 type="content" name="Statistic 3 Icon" output="normal" display_field="value" />'),
-         statHeadingThree: getContentValues('<t4 type="content" name="Statistic 3 Heading" output="normal" modifiers="striptags,htmlentities" />'),
-         statTextThree: getContentValues('<t4 type="content" name="Statistic 3 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
-         statColorThree: getContentValues('<t4 type="content" name="Statistic 3 Color Combination" output="normal" display_field="value" />'),
-         statNumFour: getContentValues('<t4 type="content" name="Statistic 4 Number" output="normal" modifiers="striptags,htmlentities" />'), 
-         statIconFour: getContentValues('<t4 type="content" name="Statistic 4 Icon" output="normal" display_field="value" />'),
-         statHeadingFour: getContentValues('<t4 type="content" name="Statistic 4 Heading" output="normal" modifiers="striptags,htmlentities" />'),
-         statTextFour: getContentValues('<t4 type="content" name="Statistic 4 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
-         statColorFour: getContentValues('<t4 type="content" name="Statistic 4 Color Combination" output="normal" display_field="value" />'),
-         summaryText: getContentValues('<t4 type="content" name="Summary Text" output="normal" modifiers="medialibrary,nav_sections" />'),
-         zoneOption: getContentValues('<t4 type="content" name="Zone Option" output="normal" display_field="value" />'),
-         anchortag: getContentValues('<t4 type="meta" meta="html_anchor" />'),
-         contentId: getContentValues('<t4 type="meta" meta="content_id" />')
- 
-     }
+    /***
+     *      Dictionary of content
+     * */
+    let infoDict = {
+
+        itemName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
+        infographicTitle: getContentValues('<t4 type="content" name="Infographic Title" output="normal" modifiers="striptags,htmlentities" />'),
+        statNumOne: getContentValues('<t4 type="content" name="Statistic 1 Number" output="normal" modifiers="striptags,htmlentities" />'), 
+        statIconOne: getContentValues('<t4 type="content" name="Statistic 1 Icon" output="normal" display_field="value" />'),
+        statHeadingOne: getContentValues('<t4 type="content" name="Statistic 1 Heading" output="normal" modifiers="striptags,htmlentities" />'),
+        statTextOne: getContentValues('<t4 type="content" name="Statistic 1 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+        statColorOne: getContentValues('<t4 type="content" name="Statistic 1 Color Combination" output="normal" display_field="value" />'),
+        statNumTwo: getContentValues('<t4 type="content" name="Statistic 2 Number" output="normal" modifiers="striptags,htmlentities" />'), 
+        statIconTwo: getContentValues('<t4 type="content" name="Statistic 2 Icon" output="normal" display_field="value" />'),
+        statHeadingTwo: getContentValues('<t4 type="content" name="Statistic 2 Heading" output="normal" modifiers="striptags,htmlentities" />'),
+        statTextTwo: getContentValues('<t4 type="content" name="Statistic 2 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+        statColorTwo: getContentValues('<t4 type="content" name="Statistic 2 Color Combination" output="normal" display_field="value" />'),
+        statNumThree: getContentValues('<t4 type="content" name="Statistic 3 Number" output="normal" modifiers="striptags,htmlentities" />'), 
+        statIconThree: getContentValues('<t4 type="content" name="Statistic 3 Icon" output="normal" display_field="value" />'),
+        statHeadingThree: getContentValues('<t4 type="content" name="Statistic 3 Heading" output="normal" modifiers="striptags,htmlentities" />'),
+        statTextThree: getContentValues('<t4 type="content" name="Statistic 3 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+        statColorThree: getContentValues('<t4 type="content" name="Statistic 3 Color Combination" output="normal" display_field="value" />'),
+        statNumFour: getContentValues('<t4 type="content" name="Statistic 4 Number" output="normal" modifiers="striptags,htmlentities" />'), 
+        statIconFour: getContentValues('<t4 type="content" name="Statistic 4 Icon" output="normal" display_field="value" />'),
+        statHeadingFour: getContentValues('<t4 type="content" name="Statistic 4 Heading" output="normal" modifiers="striptags,htmlentities" />'),
+        statTextFour: getContentValues('<t4 type="content" name="Statistic 4 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+        statColorFour: getContentValues('<t4 type="content" name="Statistic 4 Color Combination" output="normal" display_field="value" />'),
+        summaryText: getContentValues('<t4 type="content" name="Summary Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+        zoneOption: getContentValues('<t4 type="content" name="Zone Option" output="normal" display_field="value" />'),
+        anchortag: getContentValues('<t4 type="meta" meta="html_anchor" />'),
+        contentId: getContentValues('<t4 type="meta" meta="content_id" />')
+
+    }
 
 
  
  
  
  
-     /***
-      *  Initialize defaults
-      * 
-      * */
-     let beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
-     let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
-     let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
-     let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
-     let closeTitle = '</div>';
-     let cardDeck = '<span class="card visually-hidden"></span>';
-     let openGroup = '<div class="infographic card-group">';
-     let closeGroup = '</div>';
-     let summaryString = '<span class="visually-hidden"></span>';
-     let openSummary = '<div class="infographicSummary standardContent visually-hidden">';
-     let closeSummary = '</div>';
-     let endingHTML = '</article>';
+    /***
+     *  Initialize defaults
+     * 
+     * */
+    let beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
+    let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
+    let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
+    let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
+    let closeTitle = '</div>';
+    let cardDeck = '<span class="card visually-hidden"></span>';
+    let openGroup = '<div class="infographic card-group">';
+    let closeGroup = '</div>';
+    let summaryString = '<span class="visually-hidden"></span>';
+    let openSummary = '<div class="infographicSummary standardContent visually-hidden">';
+    let closeSummary = '</div>';
+    let endingHTML = '</article>';
 
 
 
@@ -165,163 +165,55 @@
      * */
     if (infoDict.statNumOne.content) {
 
+        // set card defaults
         let openCardWrapperOne = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
         let openCardBodyOne = '<div class="card-body">';
-        let cardIconOne = '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconOne.content + '"></span></div>';
         let cardNumOne = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumOne.content + '</span></div>';
         let cardHeadingOne = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingOne.content + '</p></div>';
-        let cardTextOne = '<div class="infographicItemText standardContent card-text">' + infoDict.statTextOne.content + '</div>';
         let closeCardBodyOne = '</div>';
         let closeCardWrapperOne = '</div>';
 
-        let cardOne = car;
+        // parse for icon
+        let cardIconOne =   (infoDict.statIconOne.content)
+                            ? '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconOne.content + '"></span></div>'
+                            : '<div class="infographicItemIcon visually-hidden"><span class="visually-hidden">No Icon</span></div>';
 
+        // parse for text
+        let cardTextOne =   (infoDict.statTextOne.content)
+                            ? '<div class="infographicItemText standardContent card-text">' + infoDict.statTextOne.content + '</div>'
+                            : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
+
+
+
+        let cardOne = openCardWrapperOne + openCardBodyOne + cardIconOne + cardNumOne + cardHeadingOne + cardTextOne + closeCardBodyOne + closeCardWrapperOne;
 
         cardDeck = cardOne;
     }
 
 
 
+ 
+    /***
+     *  write document once
+     * 
+     * */
+    writeDocument(
+        [
+            beginningHTML,
+            anchorString,
+            openTitle,
+            infographicHeader,
+            closeTitle,
+            openGroup,
+            cardDeck,
+            closeGroup,
+            openSummary,
+            summaryString,
+            closeSummary,
+            endingHTML
+        ]
+    );
 
-
-
-
-
-
- 
- 
- 
-     /***
-      *  modify headline if special topic present
-      * 
-      * */
-     function modifyWrapper(htmlClass) {
- 
-         beginningHTML = '<article class="newsroomMinorFeedItem newsroomBlurb card border-0 ' + htmlClass + '" id="minor' + infoDict.contentId.content + '" aria-label="' + infoDict.headline.content + '">';
-     }
- 
- 
- 
- 
-     /***
-      *  modify dateline if special topic present
-      * 
-      * */
-     function modifyDateline(specialTopic) {
- 
-         dateline = '<p class="newsroomArticlePublishedDate">' + infoDict.publishedDate.content + hyphen + '<span class="newsroomArticleSpecialCategory">' + specialTopic + '</span></p>';
-     }
- 
- 
- 
- 
-     /***
-      *  process and prioritize special topics
-      * 
-      * */
-     if (infoDict.catTags.content.includes(suLawInTheNews)) {
- 
-         modifyWrapper(suLawInTheNews);
-         modifyDateline(suLawInTheNews);
- 
-     } else if (infoDict.catTags.content.includes(announcements)) {
- 
-         modifyWrapper(announcements);
-         modifyDateline(announcements);
- 
-     } else if (infoDict.catTags.content.includes(events)) {
- 
-         modifyWrapper(events);
-         modifyDateline(events);
- 
-     }
- 
- 
- 
- 
-     /***
-      *  process categories
-      * 
-      * */
-     if (infoDict.catTags.content) {
- 
-         let arrayOfCats = infoDict.catTags.content.split(',');
-         let listItems = assignList(arrayOfCats);
- 
-         // Print any tags that were selected
-         listOfCats = '<div class="newsroomArticle tags topics visually-hidden"><ul class="categories">' + listItems + '</ul></div><br>';
-     }
- 
- 
- 
- 
-     /***
-      *  default section link
-      * 
-      * */
-     let publishedLink = (infoDict.sectionLink.content && infoDict.sectionLinkText.content) ?
-         '<span class="newsLink"><a href="' + infoDict.sectionLink.content + '" class="card-link" target="_blank" title="Visit ' + infoDict.sectionLinkText.content + '"><em>' + infoDict.sectionLinkText.content + '</em></a></span>' :
-         (infoDict.externalLink.content && infoDict.externalLinkText.content) ?
-         '<span class="newsLink"><a href="' + infoDict.externalLink.content + '" class="card-link" target="_blank" title="Visit ' + infoDict.externalLinkText.content + '"><em>' + infoDict.externalLinkText.content + '</em></a></span>' :
-         '<span class="newsLink visually-hidden">No Proper Link Provided</span>';
- 
- 
- 
- 
-     /***
-      *  determine if the article contains full text content
-      * 
-      * */
-     let titleLink = (infoDict.articleFullBody.content) ?
-         '<h3 class="newsroominfographicTitle card-title"><a href="' + infoDict.fullTextLink.content + '" class="card-link" target="_blank" aria-label="Read the full article at: ' + infoDict.headline.content + '" >' + infoDict.headline.content + '</a></h3>' :
-         '<h3 class="newsroominfographicTitle card-title">' + infoDict.headline.content + '</h3>';
- 
- 
- 
- 
-     /***
-      *  parse for summary
-      * 
-      * */
-     let summaryString = (infoDict.articleSummary.content) ?
-         '<p class="newsroomArticleLead card-text">' + infoDict.articleSummary.content + '</p>' :
-         '<p class="newsroomArticleLead card-text visually-hidden">No Summary Provided</p>';
- 
- 
- 
- 
-     /***
-      *  parse for pinned item
-      * 
-      * */
-     let pinnedItem = (infoDict.pinned.content) ?
-         '<div class="visually-hidden"><span class="articlePinned">' + infoDict.pinned.content + '</span></div>' :
-         '<div class="visually-hidden"><span class="articlePinned">No Pin Entered</span></div>';
- 
- 
- 
- 
-     /***
-      *  write document once
-      * 
-      * */
-     writeDocument(
-         [
-             beginningHTML,
-             anchorString,
-             openTitle,
-             infographicHeader,
-             closeTitle,
-             openGroup,
-             cardDeck,
-             closeGroup,
-             openSummary,
-             summaryString,
-             closeSummary,
-             endingHTML
-         ]
-     );
- 
  
  
  
