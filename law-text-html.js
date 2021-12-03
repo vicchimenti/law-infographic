@@ -117,7 +117,7 @@
       *  Initialize defaults
       * 
       * */
-     let beginningHTML = '<article class="infographicWrapper contentItem card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic">';
+     let beginningHTML = '<article class="infographicWrapper contentItem col card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic">';
      let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
      let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
      let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
@@ -135,7 +135,7 @@
      * */
     if (infoDict.infographicTitle.content) {
 
-        beginningHTML = '<article class="infographicWrapper contentItem card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '">';
+        beginningHTML = '<article class="infographicWrapper contentItem col card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '">';
         openTitle = '<div class="infographicTitle standardContent">';
         infographicHeader = '<h2>' + infoDict.infographicTitle.content + '</h2>';
     }
