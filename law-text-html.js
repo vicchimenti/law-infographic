@@ -131,8 +131,8 @@
      let suLawInTheNews = "In the News";
      let listOfCats = "<div class='newsroomArticle tags hidden'>No Tags Entered</div>";
      let dateline = '<p class="newsroomArticlePublishedDate">' + infoDict.publishedDate.content + '</p>';
-     let beginningHTML = '<article class="newsroomMinorFeedItem newsroomBlurb card border-0" id="minor' + infoDict.contentId.content + '" aria-label="' + infoDict.headline.content + '">';
-     let endingHTML = '<hr class="articleBorderBottom"></article>';
+     let beginningHTML = '<article class="infographicWrapper contentItem border-0 g-0" id="minor' + infoDict.contentId.content + '" aria-label="' + infoDict.headline.content + '">';
+     let endingHTML = '</article>';
  
  
  
