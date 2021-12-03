@@ -165,17 +165,18 @@
      * */
     if (infoDict.statNumOne.content) {
 
-        let cardOne = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
+        let openCardWrapperOne = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
+        let openCardBodyOne = '<div class="card-body">';
+        let cardIconOne = '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconOne.content + '"></span></div>';
+        let cardNumOne = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumOne.content + '</span></div>';
+        let cardHeadingOne = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingOne.content + '</p></div>';
+        let cardTextOne = '<div class="infographicItemText standardContent card-text">' + infoDict.statTextOne.content + '</div>';
+        let closeCardBodyOne = '</div>';
+        let closeCardWrapperOne = '</div>';
 
-        let cardWrapperOne = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
-        let cardIconOne = '<div class="infographicItemIcon text-center"><span class="fa ' + infoDict.statIconOne.content + '"></span></div>';
-        let cardNumOne = '<div class="infographicItemNumber">' + infoDict.statNumOne.content + '</div>';
-        let cardHeadingOne = 'statHeadingOne';
-        let cardTextOne = '';
+        let cardOne = car;
 
-        statHeadingOne
-        statNumOne
-        statTextOne
+
         cardDeck = cardOne;
     }
 
