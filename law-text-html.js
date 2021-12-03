@@ -102,6 +102,12 @@
          statTextThree: getContentValues('<t4 type="content" name="Statistic 3 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
          statColorThree: getContentValues('<t4 type="content" name="Statistic 3 Color Combination" output="normal" display_field="value" />'),
 
+         statNumFour: getContentValues('<t4 type="content" name="Statistic 4 Number" output="normal" modifiers="striptags,htmlentities" />'), 
+         statIconFour: getContentValues('<t4 type="content" name="Statistic 4 Icon" output="normal" display_field="value" />'),
+         statHeadingFour: getContentValues('<t4 type="content" name="Statistic 4 Heading" output="normal" modifiers="striptags,htmlentities" />'),
+         statTextFour: getContentValues('<t4 type="content" name="Statistic 4 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+         statColorFour: getContentValues('<t4 type="content" name="Statistic 4 Color Combination" output="normal" display_field="value" />'),
+
 
 
 
