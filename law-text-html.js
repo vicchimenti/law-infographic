@@ -251,6 +251,9 @@
          [
              beginningHTML,
              infoDict.anchortag.content,
+             openTitle,
+             infographicHeader,
+             closeTitle,
         
 
              openCardBody,
