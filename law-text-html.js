@@ -118,6 +118,7 @@
       * 
       * */
      let beginningHTML = '<article class="infographicWrapper contentItem card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic">';
+     let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
      let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
      let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
      let closeTitle = '</div>';
@@ -278,7 +279,7 @@
      writeDocument(
          [
              beginningHTML,
-             infoDict.anchortag.content,
+             anchorString,
              openTitle,
              infographicHeader,
              closeTitle,
