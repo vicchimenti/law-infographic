@@ -1,8 +1,4 @@
 /***
- * Law Infographic
- */
-
-/***
  *      @author Victor Chimenti, MSCS
  *      @see Seattle University School of Law
  *      @file law-text-html.js
