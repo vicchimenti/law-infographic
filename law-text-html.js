@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.4
+ *      @version 3.5
  */
 
 
@@ -117,7 +117,7 @@
      *  Initialize defaults
      * 
      * */
-    let beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
+    let beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
     let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
     let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
     let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
