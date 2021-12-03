@@ -95,7 +95,7 @@
      /***
       *      Dictionary of content
       * */
-     let minorDict = {
+     let infoDict = {
  
          itemName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
          articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />'),
@@ -130,8 +130,8 @@
      let announcements = "Announcements";
      let suLawInTheNews = "In the News";
      let listOfCats = "<div class='newsroomArticle tags hidden'>No Tags Entered</div>";
-     let dateline = '<p class="newsroomArticlePublishedDate">' + minorDict.publishedDate.content + '</p>';
-     let beginningHTML = '<article class="newsroomMinorFeedItem newsroomBlurb card border-0" id="minor' + minorDict.contentId.content + '" aria-label="' + minorDict.headline.content + '">';
+     let dateline = '<p class="newsroomArticlePublishedDate">' + infoDict.publishedDate.content + '</p>';
+     let beginningHTML = '<article class="newsroomMinorFeedItem newsroomBlurb card border-0" id="minor' + infoDict.contentId.content + '" aria-label="' + infoDict.headline.content + '">';
      let endingHTML = '<hr class="articleBorderBottom"></article>';
  
  
@@ -143,7 +143,7 @@
       * */
      function modifyWrapper(htmlClass) {
  
-         beginningHTML = '<article class="newsroomMinorFeedItem newsroomBlurb card border-0 ' + htmlClass + '" id="minor' + minorDict.contentId.content + '" aria-label="' + minorDict.headline.content + '">';
+         beginningHTML = '<article class="newsroomMinorFeedItem newsroomBlurb card border-0 ' + htmlClass + '" id="minor' + infoDict.contentId.content + '" aria-label="' + infoDict.headline.content + '">';
      }
  
  
@@ -155,7 +155,7 @@
       * */
      function modifyDateline(specialTopic) {
  
-         dateline = '<p class="newsroomArticlePublishedDate">' + minorDict.publishedDate.content + hyphen + '<span class="newsroomArticleSpecialCategory">' + specialTopic + '</span></p>';
+         dateline = '<p class="newsroomArticlePublishedDate">' + infoDict.publishedDate.content + hyphen + '<span class="newsroomArticleSpecialCategory">' + specialTopic + '</span></p>';
      }
  
  
@@ -165,17 +165,17 @@
       *  process and prioritize special topics
       * 
       * */
-     if (minorDict.catTags.content.includes(suLawInTheNews)) {
+     if (infoDict.catTags.content.includes(suLawInTheNews)) {
  
          modifyWrapper(suLawInTheNews);
          modifyDateline(suLawInTheNews);
  
-     } else if (minorDict.catTags.content.includes(announcements)) {
+     } else if (infoDict.catTags.content.includes(announcements)) {
  
          modifyWrapper(announcements);
          modifyDateline(announcements);
  
-     } else if (minorDict.catTags.content.includes(events)) {
+     } else if (infoDict.catTags.content.includes(events)) {
  
          modifyWrapper(events);
          modifyDateline(events);
@@ -189,9 +189,9 @@
       *  process categories
       * 
       * */
-     if (minorDict.catTags.content) {
+     if (infoDict.catTags.content) {
  
-         let arrayOfCats = minorDict.catTags.content.split(',');
+         let arrayOfCats = infoDict.catTags.content.split(',');
          let listItems = assignList(arrayOfCats);
  
          // Print any tags that were selected
@@ -205,10 +205,10 @@
       *  default section link
       * 
       * */
-     let publishedLink = (minorDict.sectionLink.content && minorDict.sectionLinkText.content) ?
-         '<span class="newsLink"><a href="' + minorDict.sectionLink.content + '" class="card-link" target="_blank" title="Visit ' + minorDict.sectionLinkText.content + '"><em>' + minorDict.sectionLinkText.content + '</em></a></span>' :
-         (minorDict.externalLink.content && minorDict.externalLinkText.content) ?
-         '<span class="newsLink"><a href="' + minorDict.externalLink.content + '" class="card-link" target="_blank" title="Visit ' + minorDict.externalLinkText.content + '"><em>' + minorDict.externalLinkText.content + '</em></a></span>' :
+     let publishedLink = (infoDict.sectionLink.content && infoDict.sectionLinkText.content) ?
+         '<span class="newsLink"><a href="' + infoDict.sectionLink.content + '" class="card-link" target="_blank" title="Visit ' + infoDict.sectionLinkText.content + '"><em>' + infoDict.sectionLinkText.content + '</em></a></span>' :
+         (infoDict.externalLink.content && infoDict.externalLinkText.content) ?
+         '<span class="newsLink"><a href="' + infoDict.externalLink.content + '" class="card-link" target="_blank" title="Visit ' + infoDict.externalLinkText.content + '"><em>' + infoDict.externalLinkText.content + '</em></a></span>' :
          '<span class="newsLink visually-hidden">No Proper Link Provided</span>';
  
  
@@ -218,9 +218,9 @@
       *  determine if the article contains full text content
       * 
       * */
-     let titleLink = (minorDict.articleFullBody.content) ?
-         '<h3 class="newsroomArticleTitle card-title"><a href="' + minorDict.fullTextLink.content + '" class="card-link" target="_blank" aria-label="Read the full article at: ' + minorDict.headline.content + '" >' + minorDict.headline.content + '</a></h3>' :
-         '<h3 class="newsroomArticleTitle card-title">' + minorDict.headline.content + '</h3>';
+     let titleLink = (infoDict.articleFullBody.content) ?
+         '<h3 class="newsroomArticleTitle card-title"><a href="' + infoDict.fullTextLink.content + '" class="card-link" target="_blank" aria-label="Read the full article at: ' + infoDict.headline.content + '" >' + infoDict.headline.content + '</a></h3>' :
+         '<h3 class="newsroomArticleTitle card-title">' + infoDict.headline.content + '</h3>';
  
  
  
@@ -229,8 +229,8 @@
       *  parse for summary
       * 
       * */
-     let summaryString = (minorDict.articleSummary.content) ?
-         '<p class="newsroomArticleLead card-text">' + minorDict.articleSummary.content + '</p>' :
+     let summaryString = (infoDict.articleSummary.content) ?
+         '<p class="newsroomArticleLead card-text">' + infoDict.articleSummary.content + '</p>' :
          '<p class="newsroomArticleLead card-text visually-hidden">No Summary Provided</p>';
  
  
@@ -240,8 +240,8 @@
       *  parse for pinned item
       * 
       * */
-     let pinnedItem = (minorDict.pinned.content) ?
-         '<div class="visually-hidden"><span class="articlePinned">' + minorDict.pinned.content + '</span></div>' :
+     let pinnedItem = (infoDict.pinned.content) ?
+         '<div class="visually-hidden"><span class="articlePinned">' + infoDict.pinned.content + '</span></div>' :
          '<div class="visually-hidden"><span class="articlePinned">No Pin Entered</span></div>';
  
  
