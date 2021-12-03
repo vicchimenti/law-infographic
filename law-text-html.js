@@ -295,6 +295,10 @@
              closeHidden,
              closeCardBody,
 
+             openFooter,
+             footerString,
+             closeFooter,
+
 
              endingHTML
          ]
