@@ -161,7 +161,8 @@
 
     /***
      *  Parse for Cards
-     * 
+     *  each card requires a minimum of a number, heading and color combo
+     *  Card 1 requires these by default, cards 2 - 4 are enforced logically
      * */
     if (infoDict.statNumOne.content) {
 
@@ -194,10 +195,10 @@
 
 
     /***
-     *  Parse for Cards
+     *  Parse for Card two
      * 
      * */
-    if (infoDict.statNumOne.content) {
+    if (infoDict.statNumTwo.content && infoDict.statColorTwo.content && infoDict.statHeadingTwo.content) {
 
         // set card defaults
         let openCardWrapperOne = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorOne.content + '">';
