@@ -169,7 +169,7 @@
 
         let cardWrapperOne = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
         let cardIconOne = '<div class="infographicItemIcon text-center"><span class="fa ' + infoDict.statIconOne.content + '"></span></div>';
-        let cardNumOne = '';
+        let cardNumOne = '<div class="infographicItemNumber">' + infoDict.statNumOne.content + '</div>';
         let cardHeadingOne = 'statHeadingOne';
         let cardTextOne = '';
 
