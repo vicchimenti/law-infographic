@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.6
+ *      @version 3.7
  */
 
 
@@ -167,7 +167,7 @@
 
         // set card defaults
         let openCardWrapperOne = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorOne.content + '">';
-        let openCardBodyOne = '<div class="card-body">';
+        let openCardBodyOne = '<div class="card-body p-0 m-3">';
         let cardNumOne = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumOne.content + '</span></div>';
         let cardHeadingOne = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingOne.content + '</p></div>';
         let closeCardBodyOne = '</div>';
