@@ -122,11 +122,12 @@
      let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
      let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
      let closeTitle = '</div>';
+     let cardDeck = '<span class="card visually-hidden"></span>';
      let openGroup = '<div class="infographic card-group">';
      let closeGroup = '</div>';
-     let footerString = '<span class="visually-hidden"></span>';
-     let openFooter = '<div class="infographicSummary standardContent card-footer border-0 visually-hidden">';
-     let closeFooter = '</div>';
+     let summaryString = '<span class="visually-hidden"></span>';
+     let openSummary = '<div class="infographicSummary standardContent visually-hidden">';
+     let closeSummary = '</div>';
      let endingHTML = '</article>';
 
 
@@ -151,9 +152,33 @@
      * */
     if (infoDict.summaryText.content) {
 
-        openFooter = '<div class="infographicSummary standardContent card-footer border-0">';
-        footerString = infoDict.summaryText.content;
+        openSummary = '<div class="infographicSummary standardContent">';
+        summaryString = infoDict.summaryText.content;
     }
+
+
+
+
+    /***
+     *  Parse for Cards
+     * 
+     * */
+    if (infoDict.statNumOne.content) {
+
+        let cardOne = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
+
+        let cardOneWrapper = '<div class="cardinfographicItem card color' + infoDict.statColorOne.content + '">';
+        let cardIconOne = '<div class="infographicItemIcon"><span class="fa ' + infoDict.statIconOne.content + '"></span></div>';
+        let cardNumOne = '';
+        let cardHeadingOne = 'statHeadingOne';
+
+        statHeadingOne
+        statNumOne
+        statTextOne
+        cardDeck = cardOne;
+    }
+
+
 
 
 
@@ -286,10 +311,11 @@
              infographicHeader,
              closeTitle,
              openGroup,
+             cardDeck,
              closeGroup,
-             openFooter,
-             footerString,
-             closeFooter,
+             openSummary,
+             summaryString,
+             closeSummary,
              endingHTML
          ]
      );
