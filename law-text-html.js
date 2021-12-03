@@ -287,16 +287,7 @@
              closeTitle,
         
 
-             openCardBody,
-             titleLink,
-             publishedLink,
-             summaryString,
-             dateline,
-             openHidden,
-             listOfCats,
-             pinnedItem,
-             closeHidden,
-             closeCardBody,
+
 
              openFooter,
              footerString,
