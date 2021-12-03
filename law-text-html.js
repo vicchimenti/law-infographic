@@ -127,9 +127,9 @@
      *  Parse for title
      * 
      * */
-    let infographicHeader =     (infoDict.infographicTitle.content) 
-                                ? '<h2>' + infoDict.infographicTitle.content + '</h2>'
-                                : '<h2 class="sr-only">Infographic</h2>';
+    let infographicHeader = (infoDict.infographicTitle.content) 
+                            ? '<h2>' + infoDict.infographicTitle.content + '</h2>'
+                            : '<h2 class="sr-only">Infographic</h2>';
 
     let beginningHTML = (infoDict.infographicTitle.content) 
                         ? '<article class="infographicWrapper contentItem card-group border-0 g-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '">'
