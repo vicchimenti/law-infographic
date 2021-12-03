@@ -57,17 +57,17 @@
  /***
   *      Returns an array of list items
   */
- function assignList(arrayOfValues) {
+//  function assignList(arrayOfValues) {
  
-     let listValues = '';
+//      let listValues = '';
  
-     for (let i = 0; i < arrayOfValues.length; i++) {
+//      for (let i = 0; i < arrayOfValues.length; i++) {
  
-         listValues += '<li class="tag">' + arrayOfValues[i].trim() + '</li>';
-     }
+//          listValues += '<li class="tag">' + arrayOfValues[i].trim() + '</li>';
+//      }
  
-     return listValues;
- }
+//      return listValues;
+//  }
  
  
  
