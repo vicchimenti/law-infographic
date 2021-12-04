@@ -117,7 +117,7 @@
      *  Initialize defaults
      * 
      * */
-    let beginningHTML = '<article class="infographicWrapper iconInfographic contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
+    let beginningHTML = '<div class="infographicWrapper iconInfographic contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" aria-label="Infographic" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
     let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
     let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
     let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
@@ -128,7 +128,7 @@
     let summaryString = '<span class="visually-hidden"></span>';
     let openSummary = '<div class="infographicSummary standardContent visually-hidden">';
     let closeSummary = '</div>';
-    let endingHTML = '</article>';
+    let endingHTML = '</div>';
 
 
 
@@ -138,7 +138,7 @@
      * */
     if (infoDict.infographicTitle.content) {
 
-        beginningHTML = '<article class="infographicWrapper iconInfographic contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
+        beginningHTML = '<div class="infographicWrapper iconInfographic contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
         openTitle = '<div class="infographicTitle standardContent">';
         infographicHeader = '<h2 class="m-3 p-1 text-center">' + infoDict.infographicTitle.content + '</h2>';
     }
