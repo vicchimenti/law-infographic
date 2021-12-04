@@ -84,7 +84,7 @@
         statNumOne: getContentValues('<t4 type="content" name="Statistic 1 Number" output="normal" modifiers="striptags,htmlentities" />'), 
         statIconOne: getContentValues('<t4 type="content" name="Statistic 1 Icon" output="normal" display_field="value" />'),
         statHeadingOne: getContentValues('<t4 type="content" name="Statistic 1 Heading" output="normal" modifiers="striptags,htmlentities" />'),
-        statTextOne: getContentValues('<t4 type="content" name="Statistic 1 Text" output="normal" modifiers="medialibrary,nav_sections" />'),
+        statTextOne: getContentValues('<t4 type="content" name="Statistic 1 Text" output="normal" modifiers="striptags,htmlentities" />'),
         statColorOne: getContentValues('<t4 type="content" name="Statistic 1 Color Combination" output="normal" display_field="value" />'),
         statNumTwo: getContentValues('<t4 type="content" name="Statistic 2 Number" output="normal" modifiers="striptags,htmlentities" />'), 
         statIconTwo: getContentValues('<t4 type="content" name="Statistic 2 Icon" output="normal" display_field="value" />'),
