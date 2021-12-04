@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 3.11
+ *      @version 3.12
  */
 
 
@@ -140,7 +140,7 @@
 
         beginningHTML = '<article class="infographicWrapper contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" aria-label="' + infoDict.infographicTitle.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
         openTitle = '<div class="infographicTitle standardContent">';
-        infographicHeader = '<h2 class="m-1 p-1 text-center">' + infoDict.infographicTitle.content + '</h2>';
+        infographicHeader = '<h2 class="m-3 p-1 text-center">' + infoDict.infographicTitle.content + '</h2>';
     }
 
 
