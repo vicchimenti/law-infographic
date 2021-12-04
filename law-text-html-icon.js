@@ -120,7 +120,7 @@
     let beginningHTML = '<div class="infographicWrapper iconInfographic contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
     let anchorString = infoDict.anchortag.content || '<span class="visually-hidden">No Anchor</span>';
     let infographicHeader = '<h2 class="sr-only">Infographic</h2>';
-    let openTitle = '<div class="infographicTitle standardContent visually-hidden">';
+    let openTitle = '<div class="infographicTitle p-3 visually-hidden">';
     let closeTitle = '</div>';
     let cardDeck = '<span class="card visually-hidden"></span>';
     let openGroup = '<div class="infographic card-group flex-column flex-lg-row">';
@@ -139,8 +139,8 @@
     if (infoDict.infographicTitle.content) {
 
         beginningHTML = '<div class="infographicWrapper iconInfographic contentItem col border-0 g-0 m-0 p-0" id="infographic' + infoDict.contentId.content + '" data-position-default="Main" data-position-selected="' + infoDict.zoneOption.content + '">';
-        openTitle = '<div class="infographicTitle standardContent">';
-        infographicHeader = '<h2 class="m-3 p-1 text-center">' + infoDict.infographicTitle.content + '</h2>';
+        openTitle = '<div class="infographicTitle p-3">';
+        infographicHeader = '<h2 class="text-center">' + infoDict.infographicTitle.content + '</h2>';
     }
 
 
