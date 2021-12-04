@@ -256,6 +256,37 @@
 
 
 
+    /***
+     *  Parse for Card three
+     * 
+     * */
+    if (infoDict.statNumFour.content && infoDict.statColorFour.content && infoDict.statHeadingFour.content) {
+
+        // set card defaults
+        let openCardWrapperThree = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorFour.content + '">';
+        let openCardBodyThree = '<div class="card-body p-0 m-3">';
+        let cardNumThree = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumFour.content + '</span></div>';
+        let cardHeadingThree = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingFour.content + '</p></div>';
+        let closeCardBodyThree = '</div>';
+        let closeCardWrapperThree = '</div>';
+
+        // parse for icon
+        let cardIconThree = (infoDict.statIconFour.content)
+                            ? '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconFour.content + '"></span></div>'
+                            : '<div class="infographicItemIcon visually-hidden"><span class="visually-hidden">No Icon</span></div>';
+
+        // parse for text
+        let cardTextThree = (infoDict.statTextFour.content)
+                            ? '<div class="infographicItemText standardContent card-text"><p class="card-title text-center">' + infoDict.statTextFour.content + '</p></div>'
+                            : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
+
+        let cardThree = openCardWrapperThree + openCardBodyThree + cardIconThree + cardNumThree + cardHeadingThree + cardTextThree + closeCardBodyThree + closeCardWrapperThree;
+
+        cardDeck += cardThree;
+    }
+
+
+
  
     /***
      *  write document once
