@@ -263,26 +263,26 @@
     if (infoDict.statNumFour.content && infoDict.statColorFour.content && infoDict.statHeadingFour.content) {
 
         // set card defaults
-        let openCardWrapperThree = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorFour.content + '">';
-        let openCardBodyThree = '<div class="card-body p-0 m-3">';
-        let cardNumThree = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumFour.content + '</span></div>';
-        let cardHeadingThree = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingFour.content + '</p></div>';
-        let closeCardBodyThree = '</div>';
-        let closeCardWrapperThree = '</div>';
+        let openCardWrapperFour = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorFour.content + '">';
+        let openCardBodyFour = '<div class="card-body p-0 m-3">';
+        let cardNumFour = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumFour.content + '</span></div>';
+        let cardHeadingFour = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingFour.content + '</p></div>';
+        let closeCardBodyFour = '</div>';
+        let closeCardWrapperFour = '</div>';
 
         // parse for icon
-        let cardIconThree = (infoDict.statIconFour.content)
+        let cardIconFour = (infoDict.statIconFour.content)
                             ? '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconFour.content + '"></span></div>'
                             : '<div class="infographicItemIcon visually-hidden"><span class="visually-hidden">No Icon</span></div>';
 
         // parse for text
-        let cardTextThree = (infoDict.statTextFour.content)
+        let cardTextFour = (infoDict.statTextFour.content)
                             ? '<div class="infographicItemText standardContent card-text"><p class="card-title text-center">' + infoDict.statTextFour.content + '</p></div>'
                             : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
 
-        let cardThree = openCardWrapperThree + openCardBodyThree + cardIconThree + cardNumThree + cardHeadingThree + cardTextThree + closeCardBodyThree + closeCardWrapperThree;
+        let cardFour = openCardWrapperFour + openCardBodyFour + cardIconFour + cardNumFour + cardHeadingFour + cardTextFour + closeCardBodyFour + closeCardWrapperFour;
 
-        cardDeck += cardThree;
+        cardDeck += cardFour;
     }
 
 
