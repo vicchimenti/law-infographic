@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 4.5
+ *      @version 4.6
  */
 
 
@@ -125,8 +125,8 @@
     let cardDeck = '<span class="card visually-hidden"></span>';
     let openGroup = '<div class="infographic card-group flex-column flex-lg-row">';
     let closeGroup = '</div>';
-    let summaryString = '<span class="visually-hidden"></span>';
-    let openSummary = '<div class="infographicSummary standardContent visually-hidden">';
+    let summaryString = '<span class="standardContent card-text visually-hidden"></span>';
+    let openSummary = '<div class="infographicSummary p-3 visually-hidden">';
     let closeSummary = '</div>';
     let endingHTML = '</div>';
 
@@ -152,8 +152,8 @@
      * */
     if (infoDict.summaryText.content) {
 
-        openSummary = '<div class="infographicSummary standardContent pb-2">';
-        summaryString = '<p class="summaryText card-text">' + infoDict.summaryText.content + '</p>';
+        openSummary = '<div class="infographicSummary p-3">';
+        summaryString = '<strong class="summaryText standardContent card-text">' + infoDict.summaryText.content + '</strong>';
     }
 
 
