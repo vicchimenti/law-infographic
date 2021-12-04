@@ -9,7 +9,7 @@
  *
  *      Document will write once when the page loads
  *
- *      @version 4.7
+ *      @version 4.8
  */
 
 
@@ -153,7 +153,7 @@
     if (infoDict.summaryText.content) {
 
         openSummary = '<div class="infographicSummary p-3">';
-        summaryString = '<p class="summaryText standardContent card-text fw-bolder">' + infoDict.summaryText.content + '</p>';
+        summaryString = '<p class="summaryText standardContent card-text p-2">' + infoDict.summaryText.content + '</p>';
     }
 
 
