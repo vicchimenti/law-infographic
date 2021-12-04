@@ -246,7 +246,7 @@
 
         // parse for text
         let cardTextThree = (infoDict.statTextThree.content)
-                            ? '<div class="infographicItemText standardContent card-text">' + infoDict.statTextThree.content + '</div>'
+                            ? '<div class="infographicItemText standardContent card-text"><p class="card-title text-center">' + infoDict.statTextThree.content + '</p></div>'
                             : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
 
         let cardThree = openCardWrapperThree + openCardBodyThree + cardIconThree + cardNumThree + cardHeadingThree + cardTextThree + closeCardBodyThree + closeCardWrapperThree;
