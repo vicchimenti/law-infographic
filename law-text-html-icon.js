@@ -181,7 +181,7 @@
 
         // parse for text
         let cardTextOne =   (infoDict.statTextOne.content)
-                            ? '<div class="infographicItemText standardContent card-text">' + infoDict.statTextOne.content + '</div>'
+                            ? '<div class="infographicItemText standardContent card-text"><p class="card-title text-center">' + infoDict.statTextOne.content + '</p></div>'
                             : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
 
 
