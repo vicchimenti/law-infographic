@@ -226,7 +226,7 @@
 
 
     /***
-     *  Parse for Card two
+     *  Parse for Card three
      * 
      * */
     if (infoDict.statNumThree.content && infoDict.statColorThree.content && infoDict.statHeadingThree.content) {
