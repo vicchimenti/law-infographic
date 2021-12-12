@@ -311,18 +311,18 @@
         let closeCardWrapperFive = '</div>';
 
         // parse for icon
-        let cardIconFour =  (infoDict.statIconFive.content)
+        let cardIconFive =  (infoDict.statIconFive.content)
                             ? '<div class="infographicItemIcon"><span class="text-center fa ' + infoDict.statIconFive.content + '"></span></div>'
                             : '<div class="infographicItemIcon visually-hidden"><span class="visually-hidden">No Icon</span></div>';
 
         // parse for text
-        let cardTextFour =  (infoDict.statTextFive.content)
+        let cardTextFive =  (infoDict.statTextFive.content)
                             ? '<div class="infographicItemText standardContent card-text"><p class="card-title text-center">' + infoDict.statTextFive.content + '</p></div>'
                             : '<div class="infographicItemText visually-hidden"><span class="visually-hidden">No Text</span></div>';
 
-        let cardFour = openCardWrapperFour + openCardBodyFour + cardIconFour + cardNumFour + cardHeadingFour + cardTextFour + closeCardBodyFour + closeCardWrapperFour;
+        let cardFive = openCardWrapperFive + openCardBodyFive + cardIconFive + cardNumFive + cardHeadingFive + cardTextFive + closeCardBodyFive + closeCardWrapperFive;
 
-        cardDeck += cardFour;
+        cardDeck += cardFive;
     }
 
 
