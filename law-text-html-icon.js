@@ -300,13 +300,13 @@
      *  Parse for Card five
      * 
      * */
-    if (infoDict.statNumFour.content && infoDict.statColorFour.content && infoDict.statHeadingFour.content) {
+    if (infoDict.statNumFive.content && infoDict.statColorFive.content && infoDict.statHeadingFive.content) {
 
         // set card defaults
-        let openCardWrapperFour = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorFour.content + '">';
+        let openCardWrapperFour = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorFive.content + '">';
         let openCardBodyFour = '<div class="card-body p-0 m-3">';
-        let cardNumFour = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumFour.content + '</span></div>';
-        let cardHeadingFour = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingFour.content + '</p></div>';
+        let cardNumFour = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumFive.content + '</span></div>';
+        let cardHeadingFour = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingFive.content + '</p></div>';
         let closeCardBodyFour = '</div>';
         let closeCardWrapperFour = '</div>';
 
