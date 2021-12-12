@@ -101,6 +101,14 @@
         statHeadingFour: getContentValues('<t4 type="content" name="Statistic 4 Heading" output="normal" modifiers="striptags,htmlentities" />'),
         statTextFour: getContentValues('<t4 type="content" name="Statistic 4 Text" output="normal" modifiers="striptags,htmlentities" />'),
         statColorFour: getContentValues('<t4 type="content" name="Statistic 4 Color Combination" output="normal" display_field="value" />'),
+
+        statNumFive: getContentValues('<t4 type="content" name="Statistic 5 Number" output="normal" modifiers="striptags,htmlentities" />'), 
+        statIconFive: getContentValues('<t4 type="content" name="Statistic 5 Icon" output="normal" display_field="value" />'),
+        statHeadingFive: getContentValues('<t4 type="content" name="Statistic 5 Heading" output="normal" modifiers="striptags,htmlentities" />'),
+        statTextFive: getContentValues('<t4 type="content" name="Statistic 5 Text" output="normal" modifiers="striptags,htmlentities" />'),
+        statColorFive: getContentValues('<t4 type="content" name="Statistic 5 Color Combination" output="normal" display_field="value" />'),
+
+
         summaryText: getContentValues('<t4 type="content" name="Summary Text" output="normal" modifiers="striptags,htmlentities" />'),
         zoneOption: getContentValues('<t4 type="content" name="Zone Option" output="normal" display_field="value" />'),
         anchortag: getContentValues('<t4 type="meta" meta="html_anchor" />'),
