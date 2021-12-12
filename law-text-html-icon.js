@@ -5,7 +5,7 @@
  *          Law - Icon Infographic
  *          ID: 5608
  *
- *      This content type displays from 1 to 4 infographic cards
+ *      This content type displays from 1 to 5 infographic cards
  *
  *      Document will write once when the page loads
  *
