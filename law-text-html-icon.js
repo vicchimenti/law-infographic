@@ -265,7 +265,7 @@
 
 
     /***
-     *  Parse for Card three
+     *  Parse for Card four
      * 
      * */
     if (infoDict.statNumFour.content && infoDict.statColorFour.content && infoDict.statHeadingFour.content) {
