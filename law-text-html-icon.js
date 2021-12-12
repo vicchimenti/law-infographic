@@ -303,12 +303,12 @@
     if (infoDict.statNumFive.content && infoDict.statColorFive.content && infoDict.statHeadingFive.content) {
 
         // set card defaults
-        let openCardWrapperFour = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorFive.content + '">';
-        let openCardBodyFour = '<div class="card-body p-0 m-3">';
-        let cardNumFour = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumFive.content + '</span></div>';
-        let cardHeadingFour = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingFive.content + '</p></div>';
-        let closeCardBodyFour = '</div>';
-        let closeCardWrapperFour = '</div>';
+        let openCardWrapperFive = '<div class="cardinfographicItem card border-0 rounded-0 color' + infoDict.statColorFive.content + '">';
+        let openCardBodyFive = '<div class="card-body p-0 m-3">';
+        let cardNumFive = '<div class="infographicItemNumber"><span class="card-text text-center">' + infoDict.statNumFive.content + '</span></div>';
+        let cardHeadingFive = '<div class="infographicItemHeader"><p class="card-title text-center text-uppercase">' + infoDict.statHeadingFive.content + '</p></div>';
+        let closeCardBodyFive = '</div>';
+        let closeCardWrapperFive = '</div>';
 
         // parse for icon
         let cardIconFour =  (infoDict.statIconFive.content)
